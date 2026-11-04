@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shaikh Mohammad Ayan | AI/ML Portfolio</title>
+<meta name="description" content="AI/ML intern building RAG pipelines, AI assistants and evaluation agents.">
+<style>
+:root{--bg:#fafaf7;--card:#fff;--text:#1c1c1a;--muted:#62625c;--accent:#0f766e;--line:#e4e4de}
+@media (prefers-color-scheme:dark){:root{--bg:#121413;--card:#1b1e1c;--text:#ecece8;--muted:#a0a39b;--accent:#5eead4;--line:#2b2f2c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{padding:72px 0 40px}
+h1{font-size:clamp(2rem,6vw,3rem);margin:0 0 8px;letter-spacing:-.02em}
+.role{color:var(--accent);font-weight:600;margin:0 0 16px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 24px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:600;margin:0 8px 8px 0}
+.btn.fill{background:var(--accent);color:var(--bg)}
+section{padding:32px 0;border-top:1px solid var(--line)}
+h2{font-size:1.3rem;margin:0 0 20px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column}
+.card h3{margin:0 0 8px;font-size:1.05rem}
+.card p{margin:0 0 12px;color:var(--muted);font-size:.95rem;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.tags span{font-size:.78rem;padding:2px 9px;border-radius:99px;background:var(--bg);border:1px solid var(--line)}
+.card a{color:var(--accent);font-weight:600;text-decoration:none}
+.skills dt{font-weight:600;margin-top:12px}
+.skills dd{margin:2px 0 0;color:var(--muted)}
+.item{margin-bottom:16px}
+.item b{display:block}
+.item small{color:var(--muted)}
+.mail{color:var(--muted);margin:0 0 16px}
+button.btn{background:none;font:inherit;font-weight:600;cursor:pointer;padding:4px 12px;margin-left:8px}
+footer{padding-top:24px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Shaikh Mohammad Ayan</h1>
+  <p class="role">AI/ML Intern · Ahmedabad, India</p>
+  <p class="lead">I build retrieval-augmented generation (RAG) systems, AI assistants and agents that evaluate other AI answers. Currently an AI/ML intern at SolGuruz.</p>
+  <a class="btn fill" href="#projects">View projects</a>
+  <a class="btn" href="#contact">Get in touch</a>
+</header>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>Multimodal RAG Pipeline</h3>
+      <p>Answers questions from PDFs that contain text, tables, charts and images. Uses OCR on images, retrieves the 5 closest chunks, and cites page numbers.</p>
+      <div class="tags"><span>Ollama</span><span>ChromaDB</span><span>Llama 3.2</span></div>
+      <a href="https://github.com/ayan84956-source/RAG" target="_blank" rel="noopener">View on GitHub →</a>
+    </article>
+    <article class="card">
+      <h3>Personal AI Assistant</h3>
+      <p>Answers questions, reads documents, remembers context and gives recommendations. About 1.2 s response time in my tests on 10–20 documents.</p>
+      <div class="tags"><span>Groq</span><span>PostgreSQL</span><span>Streamlit</span></div>
+      <a href="https://github.com/ayan84956-source/Personal_AI" target="_blank" rel="noopener">View on GitHub →</a>
+    </article>
+    <article class="card">
+      <h3>Answer-Reviewing Agent</h3>
+      <p>Scores AI answers out of 10 using LLM-as-a-judge and trajectory evaluation.</p>
+      <div class="tags"><span>Groq</span><span>Streamlit</span></div>
+      <a href="https://github.com/ayan84956-source/Agent" target="_blank" rel="noopener">View on GitHub →</a>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt><dd>Python, Java, C/C++, SQL</dd>
+    <dt>AI / ML</dt><dd>RAG, LangChain, CrewAI, PyTorch, Ollama, Groq API, agent evaluation</dd>
+    <dt>Data</dt><dd>PostgreSQL, MySQL, SQLite, ChromaDB, pandas, NumPy, Matplotlib</dd>
+    <dt>Tools</dt><dd>Git, GitHub, VS Code, Streamlit, Google Cloud</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="item">
+    <b>AI/ML Intern, SolGuruz</b>
+    <small>Ashram Road, Ahmedabad · Sep 2026 – Dec 2026</small>
+    <p>Learned and applied Groq LLMs, RAG, vector databases, agentic AI and evaluation, CrewAI, MCP servers and context engineering, then built the three projects above.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="item"><b>B.Tech, Information Technology</b><small>RAI University, Ahmedabad · 2025 – 2028</small></div>
+  <div class="item"><b>Diploma, Information Technology</b><small>LJ University · completed 2024</small></div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <a class="btn fill" href="https://mail.google.com/mail/?view=cm&fs=1&to=ayan84956@gmail.com" target="_blank" rel="noopener">Email me</a>
+  <a class="btn" href="https://github.com/ayan84956-source" target="_blank" rel="noopener">GitHub</a>
+  <a class="btn" href="tel:+919106393929">Call</a>
+</section>
+
+<footer>© <span id="y"></span> Shaikh Mohammad Ayan</footer>
+</main>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+var c=document.getElementById('copy');
+c.addEventListener('click',function(){
+  navigator.clipboard.writeText('ayan84956@gmail.com').then(function(){
+    c.textContent='Copied!';
+    setTimeout(function(){c.textContent='Copy';},1500);
+  });
+});
+</script>
+</body>
+</html>
